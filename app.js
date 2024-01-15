@@ -4,7 +4,7 @@ app = express();
 const PORT = 8000;
 
 app.get("/api/products", (request, response) => {
-  return response.json(data);
+  return response.json({ msg : data });
 });
 
 app.listen(PORT, () => {
